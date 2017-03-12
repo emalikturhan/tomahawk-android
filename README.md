@@ -68,4 +68,6 @@ For a larger overview you should read the official Android "Code Style Guideline
 [Spotify Plugin App](https://github.com/tomahawk-player/tomahawk-android-spotify)     
 [Deezer Plugin App](https://github.com/tomahawk-player/tomahawk-android-deezer)
 
-ENES MALİK TURHAN WAS HERE.
+RIZA ISIK WAS HERE.
+
+ENES MALIK TURHAN WAS HERE.
