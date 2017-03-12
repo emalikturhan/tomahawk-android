@@ -319,11 +319,11 @@ public class PlaybackManager extends Cacheable {
         return getNextEntry(mCurrentEntry);
     }
 
-    public PlaylistEntry getNextEntry(PlaylistEntry entry) {
+    public PlaylistEntry getNextEntry(PlaylistEntry entry) {//HERE
         if (entry == null) {
             return null;
         }
-        if (mRepeatMode == REPEAT_ONE) {
+        if (mRepeatMode == REPEAT_ONE) {//HERE
             return entry;
         }
         int index = getPlaybackListIndex(entry);
