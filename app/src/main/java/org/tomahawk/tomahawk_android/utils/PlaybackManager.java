@@ -323,9 +323,9 @@ public class PlaybackManager extends Cacheable {
         if (entry == null) {
             return null;
         }
-        if (mRepeatMode == REPEAT_ONE) {//HERE
+       /* if (mRepeatMode == REPEAT_ONE) {//HERE
             return entry;
-        }
+        }*/
         int index = getPlaybackListIndex(entry);
         PlaylistEntry nextEntry = getPlaybackListEntry(index + 1);
         if (nextEntry == null && mRepeatMode == REPEAT_ALL) {
@@ -339,7 +339,7 @@ public class PlaybackManager extends Cacheable {
     }
 
     public boolean hasNextEntry(PlaylistEntry entry) {
-        return mRepeatMode == REPEAT_ONE || getNextEntry(entry) != null;
+        return /*mRepeatMode == REPEAT_ONE ||*/ getNextEntry(entry) != null;
     }
 
     public PlaylistEntry getPreviousEntry() {
@@ -350,9 +350,9 @@ public class PlaybackManager extends Cacheable {
         if (entry == null) {
             return null;
         }
-        if (mRepeatMode == REPEAT_ONE) {
+        /*if (mRepeatMode == REPEAT_ONE) {
             return entry;
-        }
+        }*/
         int index = getPlaybackListIndex(entry);
         PlaylistEntry previousEntry = getPlaybackListEntry(index - 1);
         if (previousEntry == null && mRepeatMode == REPEAT_ALL) {
@@ -366,7 +366,7 @@ public class PlaybackManager extends Cacheable {
     }
 
     public boolean hasPreviousEntry(PlaylistEntry entry) {
-        return mRepeatMode == REPEAT_ONE || getPreviousEntry(entry) != null;
+        return /*mRepeatMode == REPEAT_ONE ||*/ getPreviousEntry(entry) != null;
     }
 
     public int getRepeatMode() {
